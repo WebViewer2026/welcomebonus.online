@@ -19,14 +19,14 @@
           extend: {
             colors: {
               playful: {
-                bg: '#f3f4f6',        /* Helles Grau als Background */
-                card: '#ffffff',        /* Reine weiße Cards */
-                cardHover: '#fafafa',
-                border: '#e5e7eb',
-                primary: '#2563eb',     /* Frisches Blau passend zum Logo */
+                bg: '#18181b',        /* Sattes, dunkles Anthrazit als Background */
+                card: '#202024',        /* Etwas helleres Dunkelgrau für die Cards */
+                cardHover: '#27272a',
+                border: '#2f2f35',
+                primary: '#2563eb',     /* Frisches Blau */
                 primaryHover: '#1d4ed8',
-                accent: '#f97316',      /* Orange passend zum Logo (.ONLINE) */
-                dark: '#1f2937',
+                accent: '#f97316',      /* Orange */
+                dark: '#f3f4f6',
                 gold: '#eab308'
               }
             }
@@ -37,14 +37,14 @@
     <style>
       body {
         font-family: 'Inter', sans-serif;
-        background-color: #f3f4f6;
-        color: #1f2937;
+        background-color: #18181b;
+        color: #f3f4f6;
       }
       .font-playful {
         font-family: 'Fredoka', sans-serif;
       }
       .playful-shadow {
-        box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.1), 0 8px 10px -6px rgba(37, 99, 235, 0.1);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
       }
       section, main {
         scroll-margin-top: 100px;
@@ -54,7 +54,7 @@
 <body class="bg-playful-bg text-playful-dark min-h-screen flex flex-col justify-between selection:bg-playful-primary selection:text-white">
 
     <!-- Top Notice Bar -->
-    <div class="bg-white border-b border-playful-border py-2 text-xs text-gray-500">
+    <div class="bg-[#121214] border-b border-[#2f2f35] py-2 text-xs text-gray-400">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <span class="bg-playful-accent text-white font-bold px-1.5 py-0.5 rounded text-[10px]">18+</span>
@@ -67,18 +67,18 @@
         </div>
     </div>
 
-<!-- Header / Nav -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-playful-border shadow-sm">
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-50 bg-[#18181b]/90 backdrop-blur border-b border-[#2f2f35] shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Logo (Text-Version) -->
             <a href="#" class="flex items-center space-x-2">
-                <span class="font-playful text-2xl md:text-3xl tracking-wide font-bold text-playful-primary">
-                    Welcome<span class="text-playful-dark">Bonus</span><span class="text-playful-accent">.online</span>
+                <span class="font-playful text-2xl md:text-3xl tracking-wide font-bold text-white">
+                    Welcome<span class="text-blue-500">Bonus</span><span class="text-playful-accent">.online</span>
                 </span>
             </a>
 
             <!-- Nav Links -->
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-gray-700">
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-gray-300">
                 <a href="#bookmakers" class="hover:text-playful-primary transition-colors">Bookmakers</a>
                 <a href="#why-us" class="hover:text-playful-primary transition-colors">Why Us</a>
                 <a href="#faq" class="hover:text-playful-primary transition-colors">FAQ</a>
@@ -97,16 +97,16 @@
     <section class="relative py-16 md:py-20 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             
-            <div class="inline-flex items-center space-x-2 bg-white border border-playful-border rounded-full px-4 py-1.5 mb-6 text-xs text-gray-600 shadow-sm">
+            <div class="inline-flex items-center space-x-2 bg-[#202024] border border-[#2f2f35] rounded-full px-4 py-1.5 mb-6 text-xs text-gray-300 shadow-sm">
                 <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
                 <span>Freshly Checked for October 2026 • 100% Independent</span>
             </div>
 
             <h1 class="font-playful text-4xl sm:text-6xl font-bold tracking-tight mb-6">
-                <span class="text-gray-900">Find Your Best</span> <span class="text-playful-primary">Welcome Bonus</span> <span class="text-gray-900">&amp; Offers</span>
+                <span class="text-white">Find Your Best</span> <span class="text-playful-primary">Welcome Bonus</span> <span class="text-white">&amp; Offers</span>
             </h1>
 
-            <p class="max-w-2xl mx-auto text-base md:text-lg text-gray-600 mb-8 font-normal">
+            <p class="max-w-2xl mx-auto text-base md:text-lg text-gray-400 mb-8 font-normal">
                 Compare top-rated bookmakers, grab exclusive promo codes, and start your winning streak with massive rewards.
             </p>
         </div>
